@@ -15,14 +15,15 @@ lab4c-tcp.c
 	--log=filename (mandatory)
 	port number (mandatory)
 
-	Opens a TCP connection to the server at the specified address and port
-	immediately send (and log) an ID terminated with a newline:
+	1.Opens a TCP connection to the server at the specified address and port
+	2.immediately send (and log) an ID terminated with a newline:
 	ID=ID-number. This new report enables the server to keep track of which
-	devices it has received reports from. Send (and log) newline terminated
-	temperature reports over the connections. Process (and log) newline-
-	terminated commands received over the connection. If temperature reports 
-	are mis-formatted, the server will return a LOG command with a description 
-	of the error. The last command sent by the server will be an OFF.
+	devices it has received reports from. 
+	3.Send (and log) newline terminated temperature reports over the connections. 
+	4.Process (and log) newline-terminated commands received over the connection. 
+	If temperature reports are mis-formatted, the server will return a LOG command with a description 
+	of the error. 
+	5.The last command sent by the server will be an OFF.
 
 lab4b-tls.c
 	Builds and runs on a Beaglebone. 
